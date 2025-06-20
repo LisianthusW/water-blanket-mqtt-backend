@@ -1,0 +1,41 @@
+{
+  "broker_host": "154.219.127.234",
+  "broker_port": 1883,
+  "topics": [
+    "sleep_blanket/+/data",
+    "sleep_blanket/+/status",
+    "sleep_blanket/+/alarm",
+    "device/sleep_blanket",
+    "sensors/sleep_monitor"
+  ],
+  "username": null,
+  "password": null,
+  "keepalive": 60,
+  "print_real_time": true,
+  "log_level": "INFO",
+  "alarm_settings": {
+    "cooldown_seconds": 60,
+    "enable_email_alerts": false,
+    "email_recipients": [],
+    "enable_log_file": true,
+    "enable_console_output": true,
+    "alarm_levels": {
+      "low": {
+        "threshold": 1,
+        "color": "yellow"
+      },
+      "medium": {
+        "threshold": 3,
+        "color": "orange"
+      },
+      "high": {
+        "threshold": 5,
+        "color": "red"
+      },
+      "critical": {
+        "threshold": 10,
+        "color": "purple"
+      }
+    }
+  }
+}
